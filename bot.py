@@ -727,4 +727,4 @@ async def command_error(ctx, error):
     else:
         await ctx.send(f'❌ Si è verificato un errore: {error}')
 
-bot.run("MTM4NTE2NDE3OTI0NTEwNTIxMw.GSsTcb._KYb-kPuSMcF3fj486BSYBHY4vyiyoih8D_-4c")
+bot.run("TOKEN")
