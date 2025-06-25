@@ -6,6 +6,9 @@ import os
 from datetime import datetime, timedelta
 import io
 
+app = Flask(__name__)
+
+
 intents = discord.Intents.default()
 intents.message_content = True
 intents.guilds = True
@@ -727,6 +730,11 @@ async def command_error(ctx, error):
 def run_web():
     port = int(os.environ.get("PORT", 3000))
     app.run(host="0.0.0.0", port=port)
+
+if __name__ == "__main__":
+    run_web()
+
+
 
 TOKEN = os.environ["TOKEN"]
 
