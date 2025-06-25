@@ -725,7 +725,7 @@ async def command_error(ctx, error):
         await ctx.send(f'❌ Si è verificato un errore: {error}')
 
 def run_web():
-    port = int(os.environ.get("PORT", 3000))
+    port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
 
 TOKEN = os.environ["TOKEN"]
