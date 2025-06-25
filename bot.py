@@ -5,9 +5,6 @@ import json
 import os
 from datetime import datetime, timedelta
 import io
-from keep_alive import keep_alive
-
-keep_alive()
 
 intents = discord.Intents.default()
 intents.message_content = True
