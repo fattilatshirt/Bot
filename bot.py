@@ -6,7 +6,8 @@ import os
 from datetime import datetime, timedelta
 import io
 import flask
-app = Flask(__name__)
+app = flask.Flask(__name__)
+
 
 
 intents = discord.Intents.default()
